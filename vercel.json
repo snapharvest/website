@@ -100,17 +100,6 @@
       "source": "/index.html",
       "destination": "/",
       "permanent": true
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.snapharvest.xyz"
-        }
-      ],
-      "destination": "https://snapharvest.xyz/:path*",
-      "permanent": true
     }
   ]
 }
