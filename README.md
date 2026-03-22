@@ -1,73 +1,82 @@
 # Snap for Harvest Website
 
-A clean, modern landing page for the Snap for Harvest Chrome extension.
+Official website for the Snap for Harvest Chrome extension. Editorial-Industrial design with comprehensive help documentation.
 
 ## Structure
 
 ```
 snap-website/
-├── index.html          # Main HTML file
-├── css/
-│   └── style.css      # All styles
-├── js/                # JavaScript (for future enhancements)
-├── images/
-│   └── logo.png       # Extension logo
-└── README.md          # This file
+└── v3/                    # Production website (deploy this folder)
+    ├── index.html
+    ├── pricing.html
+    ├── privacy.html
+    ├── terms.html
+    ├── _headers           # Netlify security headers
+    ├── _redirects         # URL redirects
+    ├── robots.txt         # Search engine rules
+    ├── sitemap.xml        # SEO sitemap
+    ├── css/
+    │   └── style.css
+    ├── images/            # Logos, screenshots, icons
+    ├── help/              # Complete help documentation
+    │   ├── index.html
+    │   ├── getting-started.html
+    │   ├── google-calendar.html
+    │   ├── notion.html
+    │   ├── custom-sites.html
+    │   ├── google-admin.html
+    │   ├── faq.html
+    │   ├── troubleshooting.html
+    │   ├── admin-policy-template.json
+    │   └── site-import-template.csv
+    └── internal/          # Private testing paths (non-indexed)
+        └── enterprise-test/
 ```
 
-## Features
+## Design Features
 
-- ✨ Clean, modern design inspired by Planyway
-- 📱 Fully responsive (mobile, tablet, desktop)
-- ⚡ Fast loading with no dependencies
-- 🎨 Purple gradient theme matching your extension
-- 🚀 Ready to deploy
+- **Dark hero section** with asymmetric layout
+- **Scrolling marquee strip** showing compatible sites with logos
+- **Horizontal feature rows** with large background numbers
+- **Mobile hamburger menu** with smooth animations
+- **Scroll reveal animations** for progressive disclosure
+- **Editorial-Industrial aesthetic** with Bricolage Grotesque font
+- **Complete help center** with admin guides and templates
 
-## Sections
+## Local Development
 
-1. **Hero** - Main call-to-action
-2. **Features** - Key extension features
-3. **How it Works** - Simple 3-step guide
-4. **Testimonials** - Social proof
-5. **Pricing** - Free forever messaging
-6. **CTA** - Final conversion prompt
-7. **Footer** - Links and info
+```bash
+# From the snap-website folder
+cd v3
+python3 -m http.server 8080
 
-## How to Use
+# Then visit:
+http://localhost:8080/
+```
 
-### Local Development
-Simply open `index.html` in your browser to preview the site.
+## Deployment to Netlify
 
-### Deployment Options
+### Option 1: Upload via Netlify UI (Recommended)
+1. Drag and drop the **v3/** folder to Netlify
+2. Site will be live immediately
 
-**GitHub Pages** (Free)
-1. Create a GitHub repository
-2. Push this folder
-3. Enable GitHub Pages in repository settings
+### Option 2: Deploy from GitHub
+1. Connect your GitHub repo to Netlify
+2. Set **Publish directory** to: `v3`
+3. No build command needed (static HTML)
 
-**Netlify** (Free)
-1. Drag and drop this folder to Netlify
-2. Get instant deployment
+## Key Features
 
-**Vercel** (Free)
-1. Import the folder to Vercel
-2. Deploy with one click
+- ✅ **SEO optimized** with sitemap and meta tags
+- ✅ **Security headers** configured for production
+- ✅ **Private enterprise test path** for internal .crx hosting
+- ✅ **Help documentation** integrated with extension
+- ✅ **CSV/JSON templates** for user and admin import
+- ✅ **Mobile responsive** across all pages
+- ✅ **Fast loading** with no dependencies
 
-## Customization
+## Links
 
-### Update Chrome Web Store Link
-Replace all instances of `https://chrome.google.com/webstore` with your actual extension URL once published.
-
-### Add Real Screenshots
-Replace the browser mockup placeholder with actual extension screenshots in the hero section.
-
-### Update Testimonials
-Add real user testimonials when available.
-
-## Next Steps
-
-1. Add real extension screenshots
-2. Update Chrome Web Store links
-3. Create demo video/GIF
-4. Set up analytics (Google Analytics, Plausible, etc.)
-5. Add contact form or support email
+- **Live site:** https://snapharvest.xyz
+- **Chrome extension:** https://chromewebstore.google.com/detail/snap-for-harvest/cpdkkbooojkbmadoihipnceeembflfic
+- **Help center:** https://snapharvest.xyz/help/

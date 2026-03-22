@@ -1,7 +1,0 @@
-User-agent: *
-Allow: /
-
-# Temporary enterprise extension test hosting
-Disallow: /internal/
-
-Sitemap: https://www.snapharvest.xyz/sitemap.xml

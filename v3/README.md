@@ -34,7 +34,7 @@ http://localhost:8080/v3/
 ```
 
 ### Deploy to Netlify
-Upload the entire `v3` folder as the root of your Netlify site.
+This is the production-ready folder. Upload this entire folder, or set your Netlify publish directory to `v3`.
 
 ## Folder Structure
 ```
