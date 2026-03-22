@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Cursor/Editor specific
+.agents/
+skills-lock.json
+.vscode/
+.idea/
+
+# Node modules (if you add build tools later)
+node_modules/
+npm-debug.log*
+
+# Temporary files
+*.tmp

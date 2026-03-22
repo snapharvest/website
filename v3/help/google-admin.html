@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Admin Guide - Snap for Harvest</title>
+  <meta name="description" content="Deploy Snap for Harvest across your organization with Chrome Browser management.">
+  <meta name="theme-color" content="#0c0a09">
+  <link rel="icon" type="image/x-icon" href="../images/logo.ico">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="help-style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <a href="../index.html" class="logo-link">
+          <img src="../images/logo.png" width="34" height="34" alt="">
+          Snap for Harvest
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+          <svg class="hamburger-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="6"  x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+          <svg class="hamburger-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/>
+          </svg>
+        </button>
+        <div class="nav-links" id="nav-menu">
+          <a href="../index.html#features" class="desktop-nav-link">Features</a>
+          <a href="../index.html#how-it-works" class="desktop-nav-link">How it works</a>
+          <a href="index.html" class="desktop-nav-link">Help</a>
+          <a href="https://chromewebstore.google.com/detail/harvest-helper/cpdkkbooojkbmadoihipnceeembflfic" target="_blank" class="btn-cta desktop-nav-link">Add to Chrome</a>
+          
+          <div class="mobile-doc-nav">
+            <div class="mobile-doc-nav-title">Documentation</div>
+            <a href="getting-started.html"><span class="mobile-doc-nav-icon">🚀</span>Installation & Setup</a>
+            <div class="mobile-doc-nav-title" style="margin-top: 16px;">Integrations</div>
+            <a href="google-calendar.html"><span class="mobile-doc-nav-icon"><img src="../images/google-calendar-icon.png" alt="" style="width: 18px; height: 18px;"></span>Google Calendar</a>
+            <a href="notion.html"><span class="mobile-doc-nav-icon"><img src="../images/notion-icon.png" alt="" style="width: 18px; height: 18px;"></span>Notion</a>
+            <a href="custom-sites.html"><span class="mobile-doc-nav-icon">🌐</span>Custom Sites</a>
+            <div class="mobile-doc-nav-title" style="margin-top: 16px;">Support</div>
+            <a href="faq.html"><span class="mobile-doc-nav-icon">❓</span>FAQ</a>
+            <a href="troubleshooting.html"><span class="mobile-doc-nav-icon">🔧</span>Troubleshooting</a>
+            <div class="mobile-doc-nav-title" style="margin-top: 16px;">Admin</div>
+            <a href="google-admin.html" class="active"><span class="mobile-doc-nav-icon">⚙️</span>Google Admin Setup</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="help-layout">
+    <aside class="help-sidebar">
+      <div class="help-sidebar-inner">
+        <div class="help-sidebar-header"><h3>Documentation</h3></div>
+        <nav class="help-nav">
+          <div class="help-nav-section">
+            <div class="help-nav-title">Getting Started</div>
+            <a href="getting-started.html" class="help-nav-link"><span class="help-nav-icon">🚀</span>Installation & Setup</a>
+          </div>
+          <div class="help-nav-section">
+            <div class="help-nav-title">Integrations</div>
+            <a href="google-calendar.html" class="help-nav-link"><span class="help-nav-icon"><img src="../images/google-calendar-icon.png" alt="" style="width: 18px; height: 18px;"></span>Google Calendar</a>
+            <a href="notion.html" class="help-nav-link"><span class="help-nav-icon"><img src="../images/notion-icon.png" alt="" style="width: 18px; height: 18px;"></span>Notion</a>
+            <a href="custom-sites.html" class="help-nav-link"><span class="help-nav-icon">🌐</span>Custom Sites</a>
+          </div>
+          <div class="help-nav-section">
+            <div class="help-nav-title">Support</div>
+            <a href="faq.html" class="help-nav-link"><span class="help-nav-icon">❓</span>FAQ</a>
+            <a href="troubleshooting.html" class="help-nav-link"><span class="help-nav-icon">🔧</span>Troubleshooting</a>
+          </div>
+          <div class="help-nav-section">
+            <div class="help-nav-title">Admin</div>
+            <a href="google-admin.html" class="help-nav-link active"><span class="help-nav-icon">⚙️</span>Google Admin Setup</a>
+          </div>
+        </nav>
+      </div>
+    </aside>
+
+    <main class="help-main">
+      <div class="help-breadcrumb">
+        <a href="../index.html">Home</a><span>/</span><a href="index.html">Help</a><span>/</span><span>Google Admin Setup</span>
+      </div>
+
+      <article class="help-article">
+        <h1>Google Admin Guide</h1>
+        <p class="help-lead">Deploy Snap for Harvest across your organization with Chrome Browser management and configure default sites with managed policy.</p>
+
+        <h2>What Admin Policy Controls</h2>
+        <p>Snap for Harvest supports managed policy so IT administrators can:</p>
+        <ul>
+          <li>Define organization default sites</li>
+          <li>Define organization custom sites (force-enabled for all users)</li>
+          <li>Lock default site toggles (users cannot disable)</li>
+          <li>Allow or disable user custom-site editing</li>
+        </ul>
+        <p>Policy-managed settings take priority over local user settings.</p>
+
+        <h2>Getting Policy Templates from the Extension</h2>
+        
+        <p>The extension can generate ready-to-use policy JSON templates based on your current configuration:</p>
+        
+        <ol>
+          <li>Open the extension <strong>Options</strong> page</li>
+          <li>Go to the <strong>Default Supported Sites</strong> tab</li>
+          <li>Click <strong>More Actions</strong> dropdown in the top-right</li>
+          <li>Choose one of:
+            <ul>
+              <li><strong>Download Defaults CSV</strong> — Review the current default site catalog</li>
+              <li><strong>Download Admin Policy JSON</strong> — Get a policy template pre-filled with defaults</li>
+            </ul>
+          </li>
+        </ol>
+
+        <img src="../images/help-admin-more-actions.png" alt="Extension options page showing More Actions dropdown with Download Defaults CSV and Download Admin Policy JSON options" style="max-width: 700px; width: 100%; border-radius: 8px; border: 1px solid var(--border); margin: 32px 0; display: block;">
+
+        <div class="help-note">
+          <p><strong>Tip:</strong> Download the Defaults CSV first to review which sites ship by default, then use the Admin Policy JSON as your starting template.</p>
+        </div>
+
+        <h3>Download Standalone Template</h3>
+        <p>You can also download a ready-to-use policy template with example sites:</p>
+        <p><a href="admin-policy-template.json" download class="btn-hero" style="color: #fafaf9 !important;">Policy Template</a></p>
+
+        <h2>Configuring Policy in Google Admin Console</h2>
+
+        <h3>Step 1: Navigate to Chrome Extension Management</h3>
+        <ol>
+          <li>Sign in to <a href="https://admin.google.com" target="_blank" rel="noopener noreferrer">Google Admin Console</a></li>
+          <li>Go to <strong>Devices</strong> → <strong>Chrome</strong> → <strong>Apps & extensions</strong></li>
+          <li>Select the organizational unit where Snap for Harvest is deployed</li>
+          <li>Find <strong>Snap for Harvest</strong> in your extension list</li>
+        </ol>
+
+        <img src="../images/help-admin-google-console.png" alt="Google Admin Console showing Chrome Apps & extensions management page with Snap for Harvest listed" style="max-width: 800px; width: 100%; border-radius: 8px; border: 1px solid var(--border); margin: 32px 0; display: block;">
+
+        <h3>Step 2: Add Managed Configuration</h3>
+        <ol>
+          <li>Click on the extension to expand settings</li>
+          <li>In the <strong>Policy for extensions</strong> section, paste your JSON policy</li>
+          <li>Click <strong>Save</strong></li>
+        </ol>
+
+        <img src="../images/help-admin-policy-paste.png" alt="Google Admin Console showing the Policy for extensions field where JSON policy is pasted" style="max-width: 700px; width: 100%; border-radius: 8px; border: 1px solid var(--border); margin: 32px 0; display: block;">
+
+        <h3>JSON Policy Template</h3>
+        <p>Download the template to see the correct format for Google Admin Console:</p>
+        <p><a href="admin-policy-template.json" download class="btn-hero" style="color: #fafaf9 !important;">Policy Template</a></p>
+        
+        <div class="help-note">
+          <p><strong>Note:</strong> Google Admin expects policy values wrapped in <code>"Value"</code> objects. The template includes example sites and default settings you can customize.</p>
+        </div>
+
+        <h2>Recommended Rollout Modes</h2>
+
+        <h3>Flexible Mode (Recommended First)</h3>
+        <pre><code>"allowUserCustomSites": { "Value": true },
+"lockDefaultSites": { "Value": false }</code></pre>
+        <p>This gives IT a baseline configuration while allowing users to add their own custom sites. Best for piloting or when teams have different tools.</p>
+
+        <h3>Strict Mode (Locked-Down Environments)</h3>
+        <pre><code>"allowUserCustomSites": { "Value": false },
+"lockDefaultSites": { "Value": true }</code></pre>
+        <p>This centralizes all site controls in IT policy. Users cannot add, remove, or import custom sites, and cannot toggle default sites.</p>
+
+        <h2>Policy Keys Explained</h2>
+        
+        <h3><code>orgDefaultSites</code></h3>
+        <p>Array of default sites to add or override for the organization.</p>
+        <ul>
+          <li><code>pattern</code> (string, required): URL pattern</li>
+          <li><code>name</code> (string, optional): Display name</li>
+          <li><code>enabled</code> (boolean, default: true): Whether site is active</li>
+          <li><code>locked</code> (boolean, default: false): Whether users can toggle on/off</li>
+        </ul>
+
+        <h3><code>orgCustomSites</code></h3>
+        <p>Array of custom sites force-enabled for all users.</p>
+        <ul>
+          <li><code>pattern</code> (string, required): URL pattern</li>
+          <li><code>name</code> (string, optional): Display name</li>
+        </ul>
+
+        <h3><code>allowUserCustomSites</code></h3>
+        <p>Boolean. If <code>false</code>, users cannot add, remove, or import custom sites.</p>
+
+        <h3><code>lockDefaultSites</code></h3>
+        <p>Boolean. If <code>true</code>, all default site toggles are locked and users cannot enable/disable them.</p>
+
+        <h2>Verifying Policy Deployment</h2>
+        
+        <ol>
+          <li>On a managed Chrome browser, navigate to <code>chrome://policy</code></li>
+          <li>Search for <strong>Snap for Harvest</strong> or filter by extension policies</li>
+          <li>Verify your policy keys appear with correct values</li>
+          <li>Open the extension options and confirm locked/policy-managed badges appear</li>
+        </ol>
+
+        <img src="../images/help-admin-chrome-policy.png" alt="Chrome policy page (chrome://policy) showing Snap for Harvest extension policies with orgDefaultSites and other keys" style="max-width: 800px; width: 100%; border-radius: 8px; border: 1px solid var(--border); margin: 32px 0; display: block;">
+
+        <img src="../images/help-admin-policy-badges.png" alt="Extension options page showing policy-managed badges and locked toggles on default sites" style="max-width: 700px; width: 100%; border-radius: 8px; border: 1px solid var(--border); margin: 32px 0; display: block;">
+
+        <h2>Troubleshooting</h2>
+
+        <h3>Policy seems ignored</h3>
+        <ul>
+          <li>Confirm extension is force-installed or allowed for target users</li>
+          <li>Verify JSON policy is valid (no syntax errors)</li>
+          <li>Wait for policy refresh (can take a few minutes) and restart browser</li>
+          <li>Confirm users are in the intended org unit/group</li>
+          <li>Check <code>chrome://policy</code> on a managed device</li>
+        </ul>
+
+        <h3>Users cannot add custom sites</h3>
+        <p>Check whether <code>allowUserCustomSites</code> is set to <code>false</code> by policy.</p>
+
+        <h3>Default toggles are disabled</h3>
+        <p>Check whether <code>lockDefaultSites</code> is set to <code>true</code>, or specific default entries are marked with <code>"locked": true</code>.</p>
+
+        <h2>Common Use Cases</h2>
+
+        <h3>Force-enable internal tools for all employees</h3>
+        <p>Add your internal ticketing, CRM, or project-management tools to <code>orgCustomSites</code> so they're available for everyone immediately.</p>
+
+        <h3>Disable consumer tools in enterprise environments</h3>
+        <p>Set specific default sites to <code>"enabled": false</code> and <code>"locked": true</code> to prevent usage on certain platforms.</p>
+
+        <h3>Centralized site management</h3>
+        <p>Set <code>allowUserCustomSites: false</code> and define all approved sites via <code>orgDefaultSites</code> and <code>orgCustomSites</code>.</p>
+
+        <div class="help-nav-arrows">
+          <a href="troubleshooting.html" class="help-nav-arrow prev">
+            <span class="help-nav-arrow-label">← Previous</span>
+            <span class="help-nav-arrow-title">Troubleshooting</span>
+          </a>
+        </div>
+      </article>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo-link">
+            <img src="../images/logo.png" width="30" height="30" alt="" loading="lazy">
+            <span style="font-size:15px;color:rgba(250,250,249,0.7);">Snap for Harvest</span>
+          </a>
+          <p>Quick time tracking for Harvest. Snap onto any page and log your time instantly.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="../index.html#features">Features</a>
+          <a href="../index.html#how-it-works">How it works</a>
+          <a href="index.html">Help</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="mailto:support@snapharvest.xyz">support@snapharvest.xyz</a>
+          <a href="https://chromewebstore.google.com/detail/harvest-helper/cpdkkbooojkbmadoihipnceeembflfic" target="_blank">Chrome Web Store</a>
+          <a href="https://buymeacoffee.com/felixmichvels" target="_blank">Buy us a coffee</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="../privacy.html">Privacy Policy</a>
+          <a href="../terms.html">Terms of Service</a>
+        </div>
+      </div>
+      <div class="footer-base"><p>&copy; 2026 Snap for Harvest. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <div class="lightbox-overlay" id="lightbox"><span class="lightbox-close">&times;</span><img class="lightbox-image" id="lightbox-img" src="" alt=""></div>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open);
+      document.body.classList.toggle('menu-open', open);
+    });
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      menu.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('menu-open');
+    }));
+
+    const lb=document.getElementById('lightbox'),lbImg=document.getElementById('lightbox-img');
+    document.querySelectorAll('.help-article img').forEach(img=>{
+      img.addEventListener('click',()=>{
+        lbImg.src=img.src;
+        lbImg.alt=img.alt;
+        lb.classList.add('active');
+      });
+    });
+    lb.addEventListener('click',()=>{lb.classList.remove('active');});
+    document.addEventListener('keydown',(e)=>{if(e.key==='Escape')lb.classList.remove('active');});
+  </script>
+</body>
+</html>

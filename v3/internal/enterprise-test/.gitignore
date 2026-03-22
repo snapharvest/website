@@ -1,0 +1,3 @@
+# Never commit packaged extensions
+*.crx
+*.pem

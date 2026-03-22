@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Troubleshooting - Snap for Harvest</title>
+  <meta name="description" content="Solutions for common issues with Snap for Harvest.">
+  <link rel="icon" href="../images/logo.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="help-style.css">
+</head>
+<body>
+  <nav class="navbar"><div class="container"><div class="nav-content">
+    <a href="../index.html" class="logo-link"><img src="../images/logo.png" width="34" height="34" alt="">Snap for Harvest</a>
+    <button class="nav-toggle"><svg class="hamburger-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg><svg class="hamburger-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg></button>
+    <div class="nav-links"><a href="../index.html#features" class="desktop-nav-link">Features</a><a href="../index.html#how-it-works" class="desktop-nav-link">How it works</a><a href="index.html" class="desktop-nav-link">Help</a><a href="https://chromewebstore.google.com/detail/harvest-helper/cpdkkbooojkbmadoihipnceeembflfic" target="_blank" class="btn-cta desktop-nav-link">Add to Chrome</a><div class="mobile-doc-nav"><div class="mobile-doc-nav-title">Documentation</div><a href="getting-started.html"><span class="mobile-doc-nav-icon">🚀</span>Installation & Setup</a><div class="mobile-doc-nav-title" style="margin-top: 16px;">Integrations</div><a href="google-calendar.html"><span class="mobile-doc-nav-icon"><img src="../images/google-calendar-icon.png" alt="" style="width: 18px; height: 18px;"></span>Google Calendar</a><a href="notion.html"><span class="mobile-doc-nav-icon"><img src="../images/notion-icon.png" alt="" style="width: 18px; height: 18px;"></span>Notion</a><a href="custom-sites.html"><span class="mobile-doc-nav-icon">🌐</span>Custom Sites</a><div class="mobile-doc-nav-title" style="margin-top: 16px;">Support</div><a href="faq.html"><span class="mobile-doc-nav-icon">❓</span>FAQ</a><a href="troubleshooting.html" class="active"><span class="mobile-doc-nav-icon">🔧</span>Troubleshooting</a><div class="mobile-doc-nav-title" style="margin-top: 16px;">Admin</div><a href="google-admin.html"><span class="mobile-doc-nav-icon">⚙️</span>Google Admin Setup</a></div></div>
+  </div></div></nav>
+
+  <div class="help-layout">
+    <aside class="help-sidebar"><div class="help-sidebar-inner">
+      <div class="help-sidebar-header"><h3>Documentation</h3></div>
+      <nav class="help-nav">
+        <div class="help-nav-section"><div class="help-nav-title">Getting Started</div><a href="getting-started.html" class="help-nav-link"><span class="help-nav-icon">🚀</span>Installation & Setup</a></div>
+        <div class="help-nav-section"><div class="help-nav-title">Integrations</div><a href="google-calendar.html" class="help-nav-link"><span class="help-nav-icon">📅</span>Google Calendar</a><a href="notion.html" class="help-nav-link"><span class="help-nav-icon">📝</span>Notion</a><a href="custom-sites.html" class="help-nav-link"><span class="help-nav-icon">🌐</span>Custom Sites</a></div>
+        <div class="help-nav-section"><div class="help-nav-title">Support</div><a href="faq.html" class="help-nav-link"><span class="help-nav-icon">❓</span>FAQ</a><a href="troubleshooting.html" class="help-nav-link active"><span class="help-nav-icon">🔧</span>Troubleshooting</a></div>
+        <div class="help-nav-section"><div class="help-nav-title">Admin</div><a href="google-admin.html" class="help-nav-link"><span class="help-nav-icon">⚙️</span>Google Admin Setup</a></div>
+      </nav>
+    </div></aside>
+
+    <main class="help-main">
+      <div class="help-breadcrumb"><a href="../index.html">Home</a><span>/</span><a href="index.html">Help</a><span>/</span><span>Troubleshooting</span></div>
+      <article class="help-article">
+        <h1>Troubleshooting</h1>
+        <p class="help-lead">Solutions for common issues with Snap for Harvest.</p>
+
+        <h2>Snap for Harvest Button Not Appearing</h2>
+        <h3>For Google Calendar or Notion</h3>
+        <ol>
+          <li>Check that the integration is enabled in Options → Default Sites</li>
+          <li>Refresh the page (Cmd/Ctrl + R)</li>
+          <li>Make sure you're signed into your Harvest account</li>
+          <li>Try disabling and re-enabling the integration</li>
+        </ol>
+
+        <h3>For Custom Sites</h3>
+        <ol>
+          <li>Verify the URL pattern matches the current page</li>
+          <li>Check that the site is enabled in Options → Custom Sites</li>
+          <li>Refresh the page after adding the site</li>
+          <li>Try removing and re-adding the site</li>
+        </ol>
+
+        <h2>Timer Not Loading</h2>
+        <ul>
+          <li>Make sure you're signed into your Harvest account</li>
+          <li>Check your internet connection</li>
+          <li>Try signing out and back in through the extension</li>
+          <li>Clear your browser cache and reload</li>
+        </ul>
+
+        <h2>Page Title Not Auto-Filling</h2>
+        <ul>
+          <li>This is expected on some sites with dynamic content</li>
+          <li>You can manually edit the Notes field in the Harvest timer</li>
+          <li>For custom sites, the page title should populate automatically</li>
+          <li>Try refreshing the page and clicking the button again</li>
+        </ul>
+
+        <h2>Extension Not Working After Update</h2>
+        <ol>
+          <li>Close and reopen your browser</li>
+          <li>Disable and re-enable the extension</li>
+          <li>Check for Chrome browser updates</li>
+          <li>Reinstall the extension if issues persist</li>
+        </ol>
+
+        <h2>Still Need Help?</h2>
+        <p>If you're still experiencing issues, please contact us:</p>
+        <ul>
+          <li>Email: <a href="mailto:support@snapharvest.xyz">support@snapharvest.xyz</a></li>
+          <li>Include: Browser version, extension version, and steps to reproduce the issue</li>
+        </ul>
+
+        <div class="help-nav-arrows">
+          <a href="faq.html" class="help-nav-arrow prev"><span class="help-nav-arrow-label">← Previous</span><span class="help-nav-arrow-title">FAQ</span></a>
+          <a href="google-admin.html" class="help-nav-arrow next"><span class="help-nav-arrow-label">Next →</span><span class="help-nav-arrow-title">Google Admin Setup</span></a>
+        </div>
+      </article>
+    </main>
+  </div>
+
+  <footer class="footer"><div class="container"><div class="footer-inner">
+    <div class="footer-brand"><a href="../index.html" class="logo-link"><img src="../images/logo.png" width="30" height="30" alt=""><span style="font-size:15px;color:rgba(250,250,249,0.7);">Snap for Harvest</span></a><p>Quick time tracking for Harvest.</p></div>
+    <div class="footer-col"><h4>Product</h4><a href="../index.html#features">Features</a><a href="../index.html#how-it-works">How it works</a><a href="index.html">Help</a></div>
+    <div class="footer-col"><h4>Support</h4><a href="mailto:support@snapharvest.xyz">support@snapharvest.xyz</a><a href="https://chromewebstore.google.com/detail/harvest-helper/cpdkkbooojkbmadoihipnceeembflfic" target="_blank">Chrome Web Store</a></div>
+    <div class="footer-col"><h4>Legal</h4><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms</a></div>
+  </div><div class="footer-base"><p>&copy; 2026 Snap for Harvest.</p></div></div></footer>
+  <script>const t=document.querySelector('.nav-toggle'),m=document.querySelector('.nav-links');t.addEventListener('click',()=>{const o=m.classList.toggle('is-open');t.setAttribute('aria-expanded',o);document.body.classList.toggle('menu-open',o);});m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{m.classList.remove('is-open');t.setAttribute('aria-expanded','false');document.body.classList.remove('menu-open');}));</script>
+</body>
+</html>

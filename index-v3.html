@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snap for Harvest — Quick Time Tracking Chrome Extension</title>
+  <meta name="description" content="Snap onto any page and log your time instantly. The fastest way to track time in Harvest from Google Calendar, Notion, and more.">
+  <meta name="theme-color" content="#0c0a09">
+  <link rel="icon" type="image/x-icon" href="images/logo.ico">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <a href="#" class="logo-link" aria-label="Snap for Harvest — back to top">
+          <img src="images/logo.png" width="34" height="34" alt="">
+          Snap for Harvest
+        </a>
+
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+          <svg class="hamburger-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="6"  x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+          <svg class="hamburger-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/>
+          </svg>
+        </button>
+
+        <div class="nav-links" id="nav-menu" role="navigation">
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="https://chrome.google.com/webstore" target="_blank" rel="noopener noreferrer" class="btn-cta">Add to Chrome</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+
+        <div class="hero-text">
+          <p class="hero-kicker">
+            <span class="hero-kicker-dot"></span>
+            Chrome Extension for Harvest
+          </p>
+          <h1>Snap Harvest onto <span class="accent">any</span> page.</h1>
+          <p class="hero-sub">Log your time instantly from Google Calendar, Notion, and any website — without switching tabs or losing your train of thought.</p>
+
+          <div class="hero-actions">
+            <a href="https://chrome.google.com/webstore" target="_blank" rel="noopener noreferrer" class="btn-hero">
+              Add to Chrome — It's Free
+            </a>
+          </div>
+          <p class="hero-note">Works with your existing Harvest account · 5-minute setup</p>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-screenshot-wrap">
+            <div class="hero-chrome-bar">
+              <span class="chrome-dot"></span>
+              <span class="chrome-dot"></span>
+              <span class="chrome-dot"></span>
+            </div>
+            <img
+              src="images/582shots_so.png"
+              alt="Snap for Harvest showing a pre-filled time entry in Google Calendar"
+              class="hero-screenshot"
+              width="580"
+              height="400"
+            >
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider strip -->
+  <div class="strip">
+    <div class="strip-track">
+      <div class="strip-inner" aria-hidden="true">
+        <span class="strip-item">
+          <img src="images/google-calendar-icon.png" alt="" loading="lazy">
+          Google Calendar
+        </span>
+        <span class="strip-sep"></span>
+        <span class="strip-item">
+          <img src="images/notion-icon.png" alt="" loading="lazy">
+          Notion
+        </span>
+        <span class="strip-sep"></span>
+        <span class="strip-item">
+          <img src="images/jira.png" alt="" loading="lazy">
+          Jira
+        </span>
+        <span class="strip-sep"></span>
+        <span class="strip-item">
+          <img src="images/hubspot.png" alt="" loading="lazy">
+          HubSpot
+        </span>
+        <span class="strip-sep"></span>
+        <span class="strip-item">
+          <img src="images/Googledoc.png" alt="" loading="lazy">
+          Google Docs
+        </span>
+        <span class="strip-sep"></span>
+        <span class="strip-item">
+          <img src="images/Googlemeet.png" alt="" loading="lazy">
+          Google Meet
+        </span>
+        <span class="strip-sep"></span>
+        <span class="strip-item">
+          <img src="images/spiceworks-icon.png" alt="" loading="lazy">
+          Spiceworks
+        </span>
+        <span class="strip-sep"></span>
+        <span class="strip-item">
+          <img src="images/freshservice.png" alt="" loading="lazy">
+          Freshservice
+        </span>
+        <span class="strip-sep"></span>
+        <span class="strip-item">
+          <img src="images/atlassian.png" alt="" loading="lazy">
+          Atlassian
+        </span>
+        <span class="strip-sep"></span>
+        <span class="strip-item">
+          <span style="font-size: 18px; line-height: 1;">🌐</span>
+          Any website
+        </span>
+      </div>
+      <!-- Duplicate for seamless loop -->
+      <div class="strip-inner" aria-hidden="true">
+        <span class="strip-item">
+          <img src="images/google-calendar-icon.png" alt="" loading="lazy">
+          Google Calendar
+        </span>
+        <span class="strip-sep"></span>
+        <span class="strip-item">
+          <img src="images/notion-icon.png" alt="" loading="lazy">
+          Notion
+        </span>
+        <span class="strip-sep"></span>
+        <span class="strip-item">
+          <img src="images/jira.png" alt="" loading="lazy">
+          Jira
+        </span>
+        <span class="strip-sep"></span>
+        <span class="strip-item">
+          <img src="images/hubspot.png" alt="" loading="lazy">
+          HubSpot
+        </span>
+        <span class="strip-sep"></span>
+        <span class="strip-item">
+          <img src="images/Googledoc.png" alt="" loading="lazy">
+          Google Docs
+        </span>
+        <span class="strip-sep"></span>
+        <span class="strip-item">
+          <img src="images/Googlemeet.png" alt="" loading="lazy">
+          Google Meet
+        </span>
+        <span class="strip-sep"></span>
+        <span class="strip-item">
+          <img src="images/spiceworks-icon.png" alt="" loading="lazy">
+          Spiceworks
+        </span>
+        <span class="strip-sep"></span>
+        <span class="strip-item">
+          <img src="images/freshservice.png" alt="" loading="lazy">
+          Freshservice
+        </span>
+        <span class="strip-sep"></span>
+        <span class="strip-item">
+          <img src="images/atlassian.png" alt="" loading="lazy">
+          Atlassian
+        </span>
+        <span class="strip-sep"></span>
+        <span class="strip-item">
+          <span style="font-size: 18px; line-height: 1;">🌐</span>
+          Any website
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Features -->
+  <section id="features" class="features">
+    <div class="container">
+
+      <div class="features-heading reveal">
+        <span class="section-label">Features</span>
+        <h2>Track time without breaking flow.</h2>
+        <p>Deep integrations where you already work, plus a universal overlay for everything else.</p>
+      </div>
+
+      <!-- Google Calendar -->
+      <div class="feature-row reveal">
+        <span class="feature-num">01</span>
+
+        <div class="feature-meta">
+          <div class="feature-app">
+            <img src="images/google-calendar-icon.png" alt="Google Calendar" width="32" height="32" loading="lazy">
+            <span>Google Calendar</span>
+          </div>
+          <span class="feature-tag">Native Integration</span>
+          <p>A Snap button appears directly within the event popup. Click it and Harvest opens pre-filled with the event name — no typing, no switching tabs.</p>
+        </div>
+
+        <div class="feature-detail">
+          <h4>What you get</h4>
+          <ul class="feature-perks">
+            <li>Button embedded directly inside the event</li>
+            <li>Event title auto-filled in Harvest</li>
+            <li>Works for all scheduled events and appointments</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Notion -->
+      <div class="feature-row reveal">
+        <span class="feature-num">02</span>
+
+        <div class="feature-meta">
+          <div class="feature-app">
+            <img src="images/notion-icon.png" alt="Notion" width="32" height="32" loading="lazy">
+            <span>Notion</span>
+          </div>
+          <span class="feature-tag">Native Integration</span>
+          <p>A Snap button appears in the Notion toolbar next to Share. Click it and Harvest opens pre-filled with the current page title.</p>
+        </div>
+
+        <div class="feature-detail">
+          <h4>What you get</h4>
+          <ul class="feature-perks">
+            <li>Button sits natively in the Notion toolbar</li>
+            <li>Page title auto-filled in Harvest</li>
+            <li>Track writing, planning, and project work</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Universal Overlay -->
+      <div class="universal-row reveal">
+        <div class="universal-row-inner">
+          <span class="feature-num">03</span>
+          <div class="universal-body">
+            <div>
+              <span class="feature-tag" style="background:#f5f0eb;color:#78716c;">Universal Overlay</span>
+              <h3>Works on any website.</h3>
+              <p>Add any site from the options page and Snap places a draggable button on every page you've enabled. One click to start tracking time, no matter where you're working.</p>
+            </div>
+            <div class="universal-props">
+              <div class="prop">
+                <span class="prop-icon" aria-hidden="true">⚡</span>
+                <div>
+                  <strong>Instant Access</strong>
+                  <p>Start tracking in seconds from any tab</p>
+                </div>
+              </div>
+              <div class="prop">
+                <span class="prop-icon" aria-hidden="true">🔒</span>
+                <div>
+                  <strong>Secure & Private</strong>
+                  <p>Credentials stay in your browser — we store nothing</p>
+                </div>
+              </div>
+              <div class="prop">
+                <span class="prop-icon" aria-hidden="true">⚙️</span>
+                <div>
+                  <strong>Fully Configurable</strong>
+                  <p>Enable or disable any site from the options page</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Steps -->
+  <section id="how-it-works" class="steps-section">
+    <div class="container">
+
+      <div class="steps-header reveal">
+        <span class="section-label" style="color: var(--muted-dark);">Setup</span>
+        <h2>Up and running in minutes.</h2>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card reveal">
+          <span class="step-bg-num" aria-hidden="true">1</span>
+          <div class="step-marker" aria-hidden="true">1</div>
+          <h3>Install the extension</h3>
+          <p>Add Snap for Harvest from the Chrome Web Store. Free, no credit card required.</p>
+        </div>
+        <div class="step-card reveal reveal-delay-1">
+          <span class="step-bg-num" aria-hidden="true">2</span>
+          <div class="step-marker" aria-hidden="true">2</div>
+          <h3>Connect Harvest</h3>
+          <p>Sign into your existing Harvest account in one click from the extension popup.</p>
+        </div>
+        <div class="step-card reveal reveal-delay-2">
+          <span class="step-bg-num" aria-hidden="true">3</span>
+          <div class="step-marker" aria-hidden="true">3</div>
+          <h3>Start tracking</h3>
+          <p>Click Snap on any enabled page. Your timer starts pre-filled with context — no extra typing.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-inner">
+        <div class="cta-text reveal">
+          <h2>Ready to snap into easier time tracking?</h2>
+          <p>Free forever. Works with your existing Harvest subscription.</p>
+        </div>
+        <div class="cta-side reveal reveal-delay-1">
+          <a href="https://chrome.google.com/webstore" target="_blank" rel="noopener noreferrer" class="btn-hero">
+            Add to Chrome — It's Free
+          </a>
+          <p class="cta-note">Requires an active Harvest account</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#" class="logo-link" aria-label="Snap for Harvest — back to top">
+            <img src="images/logo.png" width="30" height="30" alt="" loading="lazy">
+            <span style="font-size:15px;color:rgba(250,250,249,0.7);">Snap for Harvest</span>
+          </a>
+          <p>Quick time tracking for Harvest. Snap onto any page and log your time instantly.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="pricing.html">Pricing</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="mailto:support@snapharvest.xyz">support@snapharvest.xyz</a>
+          <a href="https://chrome.google.com/webstore" target="_blank" rel="noopener noreferrer">Chrome Web Store</a>
+          <a href="https://buymeacoffee.com/felixmichvels" target="_blank" rel="noopener noreferrer">Buy us a coffee</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+
+      <div class="footer-base">
+        <p>&copy; 2026 Snap for Harvest. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav
+    const toggle = document.querySelector('.nav-toggle');
+    const menu   = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      menu.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }));
+
+    // Scroll reveal
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('is-visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

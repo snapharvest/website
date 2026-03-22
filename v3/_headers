@@ -1,0 +1,4 @@
+# Use this file when Netlify "Publish directory" is `v3` (site root = this folder).
+/internal/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+  Cache-Control: private, no-store

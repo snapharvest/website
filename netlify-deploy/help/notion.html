@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notion Integration - Snap for Harvest</title>
+  <meta name="description" content="Track time on Notion pages with Snap for Harvest.">
+  <meta name="theme-color" content="#0c0a09">
+  <link rel="icon" type="image/x-icon" href="../images/logo.ico">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="help-style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <a href="../index.html" class="logo-link">
+          <img src="../images/logo.png" width="34" height="34" alt="">
+          Snap for Harvest
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+          <svg class="hamburger-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="6"  x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+          <svg class="hamburger-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/>
+          </svg>
+        </button>
+        <div class="nav-links" id="nav-menu">
+          <a href="../index.html#features" class="desktop-nav-link">Features</a>
+          <a href="../index.html#how-it-works" class="desktop-nav-link">How it works</a>
+          <a href="index.html" class="desktop-nav-link">Help</a>
+          <a href="https://chromewebstore.google.com/detail/harvest-helper/cpdkkbooojkbmadoihipnceeembflfic" target="_blank" class="btn-cta desktop-nav-link">Add to Chrome</a>
+          
+          <div class="mobile-doc-nav">
+            <div class="mobile-doc-nav-title">Documentation</div>
+            <a href="getting-started.html"><span class="mobile-doc-nav-icon">🚀</span>Installation & Setup</a>
+            <div class="mobile-doc-nav-title" style="margin-top: 16px;">Integrations</div>
+            <a href="google-calendar.html"><span class="mobile-doc-nav-icon"><img src="../images/google-calendar-icon.png" alt="" style="width: 18px; height: 18px;"></span>Google Calendar</a>
+            <a href="notion.html" class="active"><span class="mobile-doc-nav-icon"><img src="../images/notion-icon.png" alt="" style="width: 18px; height: 18px;"></span>Notion</a>
+            <a href="custom-sites.html"><span class="mobile-doc-nav-icon">🌐</span>Custom Sites</a>
+            <div class="mobile-doc-nav-title" style="margin-top: 16px;">Support</div>
+            <a href="faq.html"><span class="mobile-doc-nav-icon">❓</span>FAQ</a>
+            <a href="troubleshooting.html"><span class="mobile-doc-nav-icon">🔧</span>Troubleshooting</a>
+            <div class="mobile-doc-nav-title" style="margin-top: 16px;">Admin</div>
+            <a href="google-admin.html"><span class="mobile-doc-nav-icon">⚙️</span>Google Admin Setup</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="help-layout">
+    <aside class="help-sidebar">
+      <div class="help-sidebar-inner">
+        <div class="help-sidebar-header"><h3>Documentation</h3></div>
+        <nav class="help-nav">
+          <div class="help-nav-section">
+            <div class="help-nav-title">Getting Started</div>
+            <a href="getting-started.html" class="help-nav-link"><span class="help-nav-icon">🚀</span>Installation & Setup</a>
+          </div>
+          <div class="help-nav-section">
+            <div class="help-nav-title">Integrations</div>
+            <a href="google-calendar.html" class="help-nav-link"><span class="help-nav-icon"><img src="../images/google-calendar-icon.png" alt="" style="width: 18px; height: 18px;"></span>Google Calendar</a>
+            <a href="notion.html" class="help-nav-link active"><span class="help-nav-icon"><img src="../images/notion-icon.png" alt="" style="width: 18px; height: 18px;"></span>Notion</a>
+            <a href="custom-sites.html" class="help-nav-link"><span class="help-nav-icon">🌐</span>Custom Sites</a>
+          </div>
+          <div class="help-nav-section">
+            <div class="help-nav-title">Support</div>
+            <a href="faq.html" class="help-nav-link"><span class="help-nav-icon">❓</span>FAQ</a>
+            <a href="troubleshooting.html" class="help-nav-link"><span class="help-nav-icon">🔧</span>Troubleshooting</a>
+          </div>
+          <div class="help-nav-section">
+            <div class="help-nav-title">Admin</div>
+            <a href="google-admin.html" class="help-nav-link"><span class="help-nav-icon">⚙️</span>Google Admin Setup</a>
+          </div>
+        </nav>
+      </div>
+    </aside>
+
+    <main class="help-main">
+      <div class="help-breadcrumb">
+        <a href="../index.html">Home</a><span>/</span><a href="index.html">Help</a><span>/</span><span>Notion</span>
+      </div>
+
+      <article class="help-article">
+        <h1>Notion Integration</h1>
+        <p class="help-lead">Track time on Notion pages with the page title automatically captured in your Harvest timer.</p>
+
+        <img src="../images/help-notion-button.png" alt="Notion page showing Snap for Harvest button in the toolbar" style="max-width: 700px; width: 100%; border-radius: 8px; border: 1px solid var(--border); margin: 32px 0; display: block;">
+
+        <h2>How to Use</h2>
+        <ol>
+          <li>Open any <a href="https://www.notion.so" target="_blank">Notion</a> page</li>
+          <li>Look for the Snap for Harvest button in the toolbar (next to the Share button)</li>
+          <li>Click the Snap for Harvest button to open the timer</li>
+          <li>The current page title will be automatically pre-filled in the Notes field</li>
+          <li>Select your project and task</li>
+          <li>Click <strong>Start Timer</strong></li>
+        </ol>
+
+        <img src="../images/help-notion-timer.png" alt="Harvest timer popup open on Notion page" style="max-width: 700px; width: 100%; border-radius: 8px; border: 1px solid var(--border); margin: 32px 0; display: block;">
+
+        <h2>Features</h2>
+        
+        <h3>Automatic Page Title Capture</h3>
+        <p>The extension automatically captures the Notion page title and pre-fills it in your Harvest timer. No manual entry needed!</p>
+
+        <h3>Works Everywhere in Notion</h3>
+        <ul>
+          <li><strong>Regular pages:</strong> Documents, notes, wikis</li>
+          <li><strong>Databases:</strong> Tables, boards, calendars, galleries</li>
+          <li><strong>Peek/Preview mode:</strong> When viewing pages in a modal</li>
+          <li><strong>Full-page view:</strong> When pages are open in full screen</li>
+        </ul>
+
+        <h3>Dynamic Context Updates</h3>
+        <p>When you navigate to a different Notion page, the timer updates with the new page title automatically.</p>
+
+        <h2>Tips & Best Practices</h2>
+        
+        <h3>Button Location</h3>
+        <p>The Snap for Harvest button appears in the Notion toolbar, right next to the Share button. It's always visible regardless of which page you're on.</p>
+
+        <h3>Enable/Disable Integration</h3>
+        <p>To toggle the Notion integration:</p>
+        <ol>
+          <li>Click the extension icon → Options</li>
+          <li>Go to <strong>Default Sites</strong> tab</li>
+          <li>Toggle <strong>Notion</strong> on or off</li>
+        </ol>
+
+        <div class="help-note">
+          <p><strong>📹 Video guide coming soon</strong> — We're creating a video walkthrough to show you exactly how to track time on Notion.</p>
+        </div>
+
+        <h2>Common Questions</h2>
+        
+        <h3>Why isn't the button appearing?</h3>
+        <p>Make sure the Notion integration is enabled in Options → Default Sites, and refresh your Notion page.</p>
+
+        <h3>Does this work with Notion databases?</h3>
+        <p>Yes! The button works on all Notion content types including databases, wikis, and regular pages.</p>
+
+        <h3>Can I track time on shared Notion pages?</h3>
+        <p>Yes, as long as you have access to view the page, you can track time on it.</p>
+
+        <div class="help-nav-arrows">
+          <a href="google-calendar.html" class="help-nav-arrow prev">
+            <span class="help-nav-arrow-label">← Previous</span>
+            <span class="help-nav-arrow-title">Google Calendar</span>
+          </a>
+          <a href="custom-sites.html" class="help-nav-arrow next">
+            <span class="help-nav-arrow-label">Next →</span>
+            <span class="help-nav-arrow-title">Custom Sites</span>
+          </a>
+        </div>
+      </article>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo-link">
+            <img src="../images/logo.png" width="30" height="30" alt="" loading="lazy">
+            <span style="font-size:15px;color:rgba(250,250,249,0.7);">Snap for Harvest</span>
+          </a>
+          <p>Quick time tracking for Harvest. Snap onto any page and log your time instantly.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="../index.html#features">Features</a>
+          <a href="../index.html#how-it-works">How it works</a>
+          <a href="index.html">Help</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="mailto:support@snapharvest.xyz">support@snapharvest.xyz</a>
+          <a href="https://chromewebstore.google.com/detail/harvest-helper/cpdkkbooojkbmadoihipnceeembflfic" target="_blank">Chrome Web Store</a>
+          <a href="https://buymeacoffee.com/felixmichvels" target="_blank">Buy us a coffee</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="../privacy.html">Privacy Policy</a>
+          <a href="../terms.html">Terms of Service</a>
+        </div>
+      </div>
+      <div class="footer-base"><p>&copy; 2026 Snap for Harvest. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <div class="lightbox-overlay" id="lightbox"><span class="lightbox-close">&times;</span><img class="lightbox-image" id="lightbox-img" src="" alt=""></div>
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open);
+      document.body.classList.toggle('menu-open', open);
+    });
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      menu.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('menu-open');
+    }));
+
+    const lb=document.getElementById('lightbox'),lbImg=document.getElementById('lightbox-img');
+    document.querySelectorAll('.help-article img').forEach(img=>{
+      img.addEventListener('click',()=>{
+        lbImg.src=img.src;
+        lbImg.alt=img.alt;
+        lb.classList.add('active');
+      });
+    });
+    lb.addEventListener('click',()=>{lb.classList.remove('active');});
+    document.addEventListener('keydown',(e)=>{if(e.key==='Escape')lb.classList.remove('active');});
+  </script>
+</body>
+</html>

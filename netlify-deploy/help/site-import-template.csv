@@ -1,0 +1,4 @@
+pattern,name
+https://*.atlassian.net/*,Atlassian (Jira/Confluence)
+https://app.hubspot.com/*,HubSpot
+https://support.example.com/*,Internal Support
