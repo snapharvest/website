@@ -6,17 +6,17 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.snapharvest.xyz/pricing.html</loc>
+    <loc>https://www.snapharvest.xyz/pricing</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.snapharvest.xyz/privacy.html</loc>
+    <loc>https://www.snapharvest.xyz/privacy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.snapharvest.xyz/terms.html</loc>
+    <loc>https://www.snapharvest.xyz/terms</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -26,37 +26,37 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.snapharvest.xyz/help/getting-started.html</loc>
+    <loc>https://www.snapharvest.xyz/help/getting-started</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.snapharvest.xyz/help/google-calendar.html</loc>
+    <loc>https://www.snapharvest.xyz/help/google-calendar</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.snapharvest.xyz/help/notion.html</loc>
+    <loc>https://www.snapharvest.xyz/help/notion</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.snapharvest.xyz/help/custom-sites.html</loc>
+    <loc>https://www.snapharvest.xyz/help/custom-sites</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.snapharvest.xyz/help/faq.html</loc>
+    <loc>https://www.snapharvest.xyz/help/faq</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.snapharvest.xyz/help/troubleshooting.html</loc>
+    <loc>https://www.snapharvest.xyz/help/troubleshooting</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.snapharvest.xyz/help/google-admin.html</loc>
+    <loc>https://www.snapharvest.xyz/help/google-admin</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
